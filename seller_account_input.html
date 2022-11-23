@@ -23,7 +23,7 @@
 
   <!--Custom CSS -->
   <link rel="stylesheet" href="../css/custom.css">
-  <title>Register</title>
+  <title>Amazon: Seller Account</title>
 </head>
 
 <body>
@@ -34,6 +34,7 @@
     <button class="btn btn-outline-light" data-toggle="drawer" data-target="#drawer-demo">
       <i class="fas fa-sliders-h "></i>
     </button>
+
     <div class="drawer drawer-left slide" tabindex="-1" role="dialog" aria-labelledby="drawer-demo-title"
       aria-hidden="true" id="drawer-demo">
       <div class="drawer-content drawer-content-scrollable" role="document">
@@ -143,76 +144,53 @@
       </div>
     </div>
   </nav>
-  <!-- login form starts -->
-  <div class="container mb-5 ">
-    <div class="card mx-auto mt-5 pb-3 shadow  rounded" style="width: 25rem;">
-      <div class="card-body">
-        <h4 class="card-title">Register</h4>
-        <!-- register-form-start -->
-        <form class="row g-3 needs-validation" autocomplete="off" method="post" action="#" novalidate>
-          <div class="form-group">
-            <label for="userName">Your Name: </label>
-            <input name="name" type="email" placeholder="enter name" name="Email" class="form-control" id="userName" required minlength="10">
-            <div class="invalid-feedback">
-                <i class="fa-sharp fa-solid fa-triangle-exclamation"></i> Some error in your name
-                  </div>
-                  <div class="valid-feedback">
-                    <i class="fa-solid fa-thumbs-up"></i> Ok
-                  </div>
-             </div> 
-           <div class="form-group">
-            <label for="userEmail">Email: </label>
-            <input type="email" placeholder="abc@abc.com" name="Email" class="form-control" id="userEmail"
-              aria-describedby="emailHelp" placeholder="Enter email" required>
-              <div class="invalid-feedback">
-                <i class="fa-sharp fa-solid fa-triangle-exclamation"></i> Some error in your Email
-                  </div>
-                  <div class="valid-feedback">
-                    <i class="fa-solid fa-thumbs-up"></i> Ok
-                  </div>
-            <small id="emailHelp" class="form-text text-muted"><i class="fa-sharp fa-solid fa-circle-info text-primary"></i> We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="userPassword">Password: </label>
-            <input type="password" placeholder="******" name="password" class="form-control" id="userPassword"
-              placeholder="Password" aria-describedby="emailHelp" required minlength="6">
-              <div class="invalid-feedback">
-                <i class="fa-sharp fa-solid fa-triangle-exclamation"></i> Some error in your password
-                  </div>
-                  <div class="valid-feedback">
-                    <i class="fa-solid fa-thumbs-up"></i> Ok
-                  </div>
-            <small id="passwordHelp" class="form-text text-muted">Password must be atleast 6 characters</small>
-          </div> 
-          <div class="form-group">
-            <label for="userPassword2"><i class="fa-sharp  fa-solid fa-circle-info text-primary"></i>password again: </label>
-            <input type="password2" placeholder="******" name="password2" class="form-control" id="userPassword"
-              placeholder="Password2" aria-describedby="emailHelp" required minlength="6">
-              <div class="invalid-feedback">
-                <i class="fa-sharp fa-solid fa-triangle-exclamation"></i> Some error in your password
-                  </div>
-                  <div class="valid-feedback">
-                    <i class="fa-solid fa-thumbs-up"></i> Ok
-                  </div>
-            <small id="passwordHelp" class="form-text text-muted"><i class="fa-sharp fa-solid fa-circle-info text-primary"></i> Password must match the above</small>
-          </div>
-          <button type="submit" class="btn btn-warning w-100 btn-sm shadow rounded">Register</button>
-        </form>
+<!-- navbar-ends -->
 
-        <!-- <--or Seperator-->
-        <hr class="hr-text mt-2" data-content="OR">
-
-      <p class="text-center">Already have an account? <a href="../amazon_clone_theme/html/Login.html">Sign In<i class="fa-solid fa-caret-right"></i></a> </p>
-
-        <a href="#" class="btn btn-outline-success btn-sm w-100 mt-2">
-          <i class="fa-brands fa-google"></i> Sign in with Google
-        </a>
-        <a href="#" class="btn btn-outline-primary btn-sm w-100 mt-2">
-          <i class="fa-brands fa-facebook-square"></i> Sign in with Facebook
-        </a>
-      </div>
+<!-- seller-account-intro -->
+<div class="container-fluid mb-5" >
+    <div class="col-md-12 p-5 text-white text-center" style="background-color:#008577;">
+<h1 class="font-weight-bold">"Since last year, my business on Amazon has grown more than 9 times."</h1>
+<p>Narendra Mode , <em>PMO India</em> {Amazon Seller}</p>
+<button class="btn btn-warning rounded-pill font-weight-bold">Start selling</button>
+<p>
+    It only takes 15 minutes to setup your account
+</p>
     </div>
-  </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 ml-3">
+
+        <h2 class="font-weight-bold">Why sell on Amazon?</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 p-5">
+        <img src="../amazon_clone_theme/img/amazon_seller_1.jpg" height="100">
+        <h3 class="font-weight-bold">E-Commerce: Your next big sales channel</h3>
+        <div>
+            Start selling on Amazon - without building 
+            a website. Register now to start selling on Amazon.in
+        </div>
+        
+    </div> 
+    <div class="col-md-4 p-5">
+        <img src="../amazon_clone_theme/img/amazon_seller_2.jpeg" height="100">
+        <h3 class="font-weight-bold">Reach crores of customers</h3>
+        <div>
+            Sell to crores of engaged customer visiting Amazon.in on desktop 
+            and through our mobile app.
+        </div>
+    </div>
+    <div class="col-md-4 p-5">
+         <img src="../amazon_clone_theme/img/amazon_seller_3.jpeg" height="100">
+       <h3 class="font-weight-bold"> Receive timely payments</h3> 
+       <div>
+        Amazon ensures your payments for your delivered
+        orders are deposited directly in your bank account every 7 days.
+       </div>
+    </div>
+</div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -230,27 +208,6 @@
 
   <!--Custom js-->
   <script src="../js/custom.js"></script>
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-  </script>
 </body>
 
 </html>
