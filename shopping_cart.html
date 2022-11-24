@@ -23,7 +23,7 @@
 
     <!--Custom CSS -->
     <link rel="stylesheet" href="../css/custom.css">
-    <title>Amazon: Seller Account</title>
+    <title>Shopping Cart</title>
 </head>
 
 <body>
@@ -149,51 +149,202 @@
     </nav>
     <!-- navbar-ends -->
 
-    <!-- seller-account-intro -->
-    <div class="container-fluid mb-5">
-        <div class="col-md-12 p-5 text-white text-center" style="background-color:#008577;">
-            <h1 class="font-weight-bold">"Since last year, my business on Amazon has grown more than 9 times."</h1>
-            <p>Narendra Mode , <em>PMO India</em> {Amazon Seller}</p>
-            <button class="btn btn-warning rounded-pill font-weight-bold">Start selling</button>
-            <p>
-                It only takes 15 minutes to setup your account
-            </p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12 ml-3">
-
-            <h2 class="font-weight-bold">Why sell on Amazon?</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 p-5">
-            <img src="../amazon_clone_theme/img/amazon_seller_1.jpg" height="100">
-            <h3 class="font-weight-bold">E-Commerce: Your next big sales channel</h3>
-            <div>
-                Start selling on Amazon - without building
-                a website. Register now to start selling on Amazon.in
-            </div>
-
-        </div>
-        <div class="col-md-4 p-5">
-            <img src="../amazon_clone_theme/img/amazon_seller_2.jpeg" height="100">
-            <h3 class="font-weight-bold">Reach crores of customers</h3>
-            <div>
-                Sell to crores of engaged customer visiting Amazon.in on desktop
-                and through our mobile app.
+    <!-- shopping-cart-start -->
+    <div class="container my-5">
+        <!-- cart-title-start -->
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="font-weight-bold">Shopping Cart</h3>
+                <p class="text-muted float-right mt-n-3" style="font-size: 13px;">
+                    price
+                </p>
             </div>
         </div>
-        <div class="col-md-4 p-5">
-            <img src="../amazon_clone_theme/img/amazon_seller_3.jpeg" height="100">
-            <h3 class="font-weight-bold"> Receive timely payments</h3>
-            <div>
-                Amazon ensures your payments for your delivered
-                orders are deposited directly in your bank account every 7 days.
+        <!-- cart-title-ends -->
+        <!-- product-list-start -->
+
+        <div class="row">
+
+
+            <!-- product-detail-start -->
+            <div class="col-md-8">
+                <!-- product-row-start -->
+                <div class="row border-top py-3">
+                    <!-- product-image -->
+                    <div class="col-md-4">
+                        <img src="../amazon_clone_theme/img/product1.jpg" class="img-fluid" width="120" height="180"
+                            alt="">
+
+                    </div>
+                    <!-- product-details -->
+                    <div class="col-md-8">
+                        <a href="#">Sherlock Holmes</a>
+                        <p class="text-uppercase my-0 my-0 float-right "><i
+                                class="fa-sharp fa-solid fa-indian-rupee-sign" style="font-size:12px;"></i>
+                            <span class="font-weight-bold">150.00</span>
+                        </p>
+                        <p class="text-muted my-0 ">Sold by BIBLIOPHILE</p>
+                        <p class="text-muted  my-0">Paperback</p>
+                        <img src="../amazon_clone_theme/img/amazon_fulfilled.png" alt="amazon_fulfilled" width="70px">
+                        <p class="text-muted  my-0">Eligible for Free shipping</p>
+
+
+                        <div class="d-flex flex-row mt-2">
+                            <!-- Quantity -->
+                            <div class="input-group" style="width:19%;">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-info btn-sm">-</button>
+                                </div>
+                                <input style="width:30px;" type="text" class="form-control-sm" name="quantity" value="1"
+                                    id="quantity" disabled>
+                                <div class="input-group-append">
+                                    <button class="btn btn-info btn-sm">+</button>
+
+                                </div>
+                            </div>
+
+                            <!-- delete-product -->
+                            <a href="#" class=" text-danger">Delete</a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- product-row-ends -->
+                <!-- product-row-start -->
+                <div class="row border-top py-3">
+                    <!-- product-image -->
+                    <div class="col-md-4">
+                        <img src="../amazon_clone_theme/img/product2.jpg" class="img-fluid" width="120" height="180"
+                            alt="">
+
+                    </div>
+                    <!-- product-details -->
+                    <div class="col-md-8">
+                        <a href="#">Sherlock Holmes</a>
+                        <p class="text-uppercase my-0 my-0 float-right "><i
+                                class="fa-sharp fa-solid fa-indian-rupee-sign" style="font-size:12px;"></i>
+                            <span class="font-weight-bold">150.00</span>
+                        </p>
+                        <p class="text-muted my-0 ">Sold by BIBLIOPHILE</p>
+                        <p class="text-muted  my-0">Paperback</p>
+                        <img src="../amazon_clone_theme/img/amazon_fulfilled.png" alt="amazon_fulfilled" width="70px">
+                        <p class="text-muted  my-0">Eligible for Free shipping</p>
+
+
+                        <div class="d-flex flex-row mt-2">
+                            <!-- Quantity -->
+                            <div class="input-group" style="width:19%;">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-info btn-sm">-</button>
+                                </div>
+                                <input style="width:30px;" type="text" class="form-control-sm" name="quantity" value="1"
+                                    id="quantity" disabled>
+                                <div class="input-group-append">
+                                    <button class="btn btn-info btn-sm">+</button>
+
+                                </div>
+                            </div>
+
+                            <!-- delete-product -->
+                            <a href="#" class=" text-danger">Delete</a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- product-row-ends -->
+                <!-- product-row-start -->
+                <div class="row border-top py-3">
+                    <!-- product-image -->
+                    <div class="col-md-4">
+                        <img src="../amazon_clone_theme/img/product3.jpg" class="img-fluid" width="120" height="180"
+                            alt="">
+
+                    </div>
+                    <!-- product-details -->
+                    <div class="col-md-8">
+                        <a href="#">Sherlock Holmes</a>
+                        <p class="text-uppercase my-0 my-0 float-right "><i
+                                class="fa-sharp fa-solid fa-indian-rupee-sign" style="font-size:12px;"></i>
+                            <span class="font-weight-bold">150.00</span>
+                        </p>
+                        <p class="text-muted my-0 ">Sold by BIBLIOPHILE</p>
+                        <p class="text-muted  my-0">Paperback</p>
+                        <img src="../amazon_clone_theme/img/amazon_fulfilled.png" alt="amazon_fulfilled" width="70px">
+                        <p class="text-muted  my-0">Eligible for Free shipping</p>
+
+
+                        <div class="d-flex flex-row mt-2">
+                            <!-- Quantity -->
+                            <div class="input-group" style="width:19%;">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-info btn-sm">-</button>
+                                </div>
+                                <input style="width:30px;" type="text" class="form-control-sm" name="quantity" value="1"
+                                    id="quantity" disabled>
+                                <div class="input-group-append">
+                                    <button class="btn btn-info btn-sm">+</button>
+
+                                </div>
+                            </div>
+
+                            <!-- delete-product -->
+                            <a href="#" class=" text-danger">Delete</a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- product-row-ends -->
+
+
+                <!-- subtotal-row-start -->
+                <div class="row border-top py-3">
+                    <div class="col-md-12">
+                        <p class="float-right font-weight-bold">
+                            Subtotal (3 items): <i class="fa-sharp fa-solid fa-indian-rupee-sign"
+                                style="font-size:12px;"></i> 450.00
+                        </p>
+                    </div>
+                </div>
+                <!-- subtotal-row-ends -->
             </div>
+
+
+            <!-- product-detail-ends -->
+
+
+            <!-- proceed-to-buy-card-start -->
+
+            <div class="col-md-4 ">
+                <img class="image-fluid mt-n5 ml-4" src="../amazon_clone_theme/img/amazon_purchase-protection.png"
+                    alt="img-protection" width="100%" height="100px">
+
+                <div class="card ml-4">
+                    <div class="card-header bg-transparent">
+                        <p class="text-center text-success my-0" style="font-size: 12px;">
+                            <!-- <i class="fa-solid fa-circle-info text-info"></i>
+                            Add ₹ 17.00 of eligible items to your order to qualify for Free Delivery. -->
+                            <i class="fa-solid fa-check "></i>
+                            Your order is eligible for Free Delivery.
+                        </p>
+                    </div>
+                    <div class="card-body text-center" style="background-color: #f3f3f3;">
+                        <p class=" font-weight-bold">
+                            Subtotal (3 items): <i class="fa-sharp fa-solid fa-indian-rupee-sign"
+                                style="font-size:12px;"></i> 450.00
+                        </p>
+                        <button class="btn btn-warning w-100">Proceed to buy</button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- proceed-to-buy-card-end -->
+
         </div>
     </div>
+    <!-- shopping-cart-ends -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

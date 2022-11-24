@@ -23,7 +23,7 @@
 
     <!--Custom CSS -->
     <link rel="stylesheet" href="../css/custom.css">
-    <title>Amazon: Seller Account</title>
+    <title>Select Address</title>
 </head>
 
 <body>
@@ -149,52 +149,77 @@
     </nav>
     <!-- navbar-ends -->
 
-    <!-- seller-account-intro -->
-    <div class="container-fluid mb-5">
-        <div class="col-md-12 p-5 text-white text-center" style="background-color:#008577;">
-            <h1 class="font-weight-bold">"Since last year, my business on Amazon has grown more than 9 times."</h1>
-            <p>Narendra Mode , <em>PMO India</em> {Amazon Seller}</p>
-            <button class="btn btn-warning rounded-pill font-weight-bold">Start selling</button>
-            <p>
-                It only takes 15 minutes to setup your account
-            </p>
-        </div>
-    </div>
+    <!-- select-delivery-address -->
+    <div class="container my-3">
 
-    <div class="row">
-        <div class="col-md-12 ml-3">
 
-            <h2 class="font-weight-bold">Why sell on Amazon?</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 p-5">
-            <img src="../amazon_clone_theme/img/amazon_seller_1.jpg" height="100">
-            <h3 class="font-weight-bold">E-Commerce: Your next big sales channel</h3>
-            <div>
-                Start selling on Amazon - without building
-                a website. Register now to start selling on Amazon.in
+        <!-- progress-status-start -->
+        <div class="d-flex flex-column">
+
+
+            <!-- card-moment -->
+            <div class="font-weight-bold d-flex flex-row text-uppercase justify-content-around" style="font-size: 12px;">
+                <p></p>
+                <p class="my-0 py-0"><i class="fa-solid fa-2x fa-cart-shopping "></i></p>
+                <p ></p>
+                <p ></p>
             </div>
 
-        </div>
-        <div class="col-md-4 p-5">
-            <img src="../amazon_clone_theme/img/amazon_seller_2.jpeg" height="100">
-            <h3 class="font-weight-bold">Reach crores of customers</h3>
-            <div>
-                Sell to crores of engaged customer visiting Amazon.in on desktop
-                and through our mobile app.
+            <!-- progressbar -->
+            <div class="progress" style="height: 5px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar "
+                aria-label="Segment one" style="width: 25%; background-color: #e47911;"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar "
+                aria-label="Segment two" style="width: 12.5%; background-color: #e47911;"></div>
+                <div class="progress-bar  progress-bar-striped progress-bar-animated" role="progressbar "
+                aria-label="Segment three" style="width: 0%; background-color: #e47911;"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar "
+                aria-label="Segment three" style="width: 0%; background-color: #e47911;"></div>
             </div>
         </div>
-        <div class="col-md-4 p-5">
-            <img src="../amazon_clone_theme/img/amazon_seller_3.jpeg" height="100">
-            <h3 class="font-weight-bold"> Receive timely payments</h3>
-            <div>
-                Amazon ensures your payments for your delivered
-                orders are deposited directly in your bank account every 7 days.
+        
+        
+            <div class="font-weight-bold d-flex flex-row text-uppercase justify-content-around" style="font-size: 12px;">
+                <p>Sign in</p>
+                <p>Delivery and payment</p>
+                <p class="text-muted">place order</p>
+                <p class="text-muted">complete payment</p>
+            </div>
+            <!-- progress-status-end -->
+
+        <h3>Select a delivery address</h3>
+        <p>Is the address you'd like to use displayed below?
+            is so, click the corresponding "Deliver to this address" button
+        </p>
+        <h4>
+            On the move? Pick up your order from our pickup store.
+        </h4>
+        <img src="../amazon_clone_theme/img/Amazon-pickup-icon.webp" class="iamge-fluid" height="65px" width="130px">
+        <div>
+            <div class="card my-3" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="font-weight-bold p1-0 m-0">Syed Bilal Ali</p>
+                    <p class="my-0 py-0">House Number 123</p>
+                    <p class="my-0 py-0">ABC</p>
+                    <p class="my-0 py-0">Sitapur, UttarPradesh, 261001</p>
+                    <p class="my-0 py-0">India</p>
+                    <p class="my-0 py-0">Phone Number:876238525</p>
+                    <button class="btn mt-3 btn-warning btn-block btn-sm">Deliver to this address</button>
+                </div>
+            </div>
+            <div class="card my-3" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="font-weight-bold p1-0 m-0">Shivani pandey</p>
+                    <p class="my-0 py-0">House Number 456</p>
+                    <p class="my-0 py-0">ABC</p>
+                    <p class="my-0 py-0">Sitapur, UttarPradesh, 261001</p>
+                    <p class="my-0 py-0">India</p>
+                    <p class="my-0 py-0">Phone Number:876238525</p>
+                    <button class="btn mt-3 btn-warning btn-block btn-sm">Deliver to this address</button>
+                </div>
             </div>
         </div>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
