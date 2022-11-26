@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="../img/Uiconstock-Socialmedia-Amazon.ico" image="image/gif" size="16x16">
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <!--FONT AWESOME cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!--Bootstrap CSS local-->
+  <!-- <link rel="stylesheet" href="../css/bootstrap.min.css.map"> -->
+  <!-- <link rel="stylesheet" href="../css/bootstrap.css.map"> -->
+  <!-- drawer-css-file -->
+  <link rel="stylesheet" href="../amazon_clone_theme/css/bootstrap-drawer.min.css">
+
+  <!--Custom CSS -->
+  <link rel="stylesheet" href="../amazon_clone_theme/css/custom.css">
+  <title>Products Page</title>
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+    <!-- drawer start -->
+    <button class="btn btn-outline-light" data-toggle="drawer" data-target="#drawer-demo">
+      <i class="fas fa-sliders-h "></i>
+    </button>
+
+    <div class="drawer drawer-left slide" tabindex="-1" role="dialog" aria-labelledby="drawer-demo-title"
+      aria-hidden="true" id="drawer-demo">
+      <div class="drawer-content drawer-content-scrollable" role="document">
+        <div class="drawer-header bg-dark text-white">
+          <h4 class="drawer-title mx-auto" id="drawer-demo-title"><i class="fa-regular fa-user"></i>
+            Hello, Sign In
+          </h4>
+        </div>
+        <div class="drawer-body">
+          <h6 class="text-muted text-uppercase">Help and Settings</h6>
+          <a href="#" class="btn btn-outline-success my-2 btn-sm">Your Account</a>
+          <a href="../html/Login.html" class="btn btn-warning my-2 btn-sm">Sign In</a>
+        </div>
+        <div class="drawer-footer"> <button type="button" class="btn btn-outline-danger btn-sm " data-dismiss="drawer"
+            aria-label="Close">
+            <i class="fa-solid fa-2x fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- drawer ends -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../amazon_clone_theme/img/Amazon-Logo-Transparent-1024x310.png" height="30" width="100" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline" method="" get>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="dropdown px-2">
+                <button id="btnCategory" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                  All
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <input type="text" class="form-control" size="50" name="query" id="" query>
+            <input type="text" name="category" value="" id="category" hidden>
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-warning">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="dropdown px-4">
+          <button id="btnCategory" type="button" data-toggle="dropdown">
+            <i class="fa-solid fa-language"></i>
+          </button>
+          <ul class="dropdown-menu ">
+            <form class="p-3">
+              <div class="custom-control custom-radio mb-2">
+                <input class="custom-control-input" type="radio" name="lang" id="enLang">
+                <label class="custom-control-label" for="enLang">
+                  <img src="../img/flag/english.png" alt="" height="25" width="40"> <b>English</b>
+                </label>
+              </div>
+              <div class="custom-control custom-radio mb-2">
+                <input class="custom-control-input" type="radio" name="lang" id="hinLang">
+                <label class="custom-control-label" for="hinLang">
+
+                  <img src="../img/flag/india.webp" alt="" height="25" width="40"><b>Hindi</b>
+                </label>
+              </div>
+              <div class="custom-control custom-radio mb-2">
+                <input class="custom-control-input" type="radio" name="lang" id="urduLang">
+                <label class="custom-control-label" for="urduLang">
+
+                  <img src="../img/flag//flag-symbolism-Pakistan-design-Islamic.jpg" alt="" height="25"
+                    width="40"><b>Pak</b>
+                </label>
+              </div>
+              <div class="custom-control custom-radio mb-2">
+                <input class="custom-control-input" type="radio" name="lang" id="benLang">
+                <label class="custom-control-label" for="benLang">
+                  <img src="../img/flag/download.png" alt="" height="25" width="40"><b>Bangla</b>
+                </label>
+              </div>
+            </form>
+          </ul>
+        </div>
+        <div class="dropdown px-2">
+          <button id="userAccount" data-toggle="dropdown">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <ul class=" dropdown-menu px-3">
+            <div class="d-flex flex-column justify-content-center">
+              <a href="./Login.html" class="btn btn-warning w-80 btn-sm "><b>Signin</b></a>
+              <small>New customer? <a href="#">Start here</a></small>
+            </div>
+          </ul>
+        </div>
+        <a class="nav-item ml-3" href="#" aria-disabled="true">
+          <i class="fa-2x text-light fa-solid fa-cart-arrow-down"></i>
+          <span class="badge badge-warning badge-pill">
+            1
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- product-page-start -->
+  <div class="container my-5">
+      <div class="row">
+        <!-- left hand filter start -->
+        <div class="col-md-3">
+            <p class="text-capitalize font-weight-bold">Avg. Customer Review</p>
+            <button class="btn btn-sm  btn-transparent">
+              <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="btn-rating">& Up</span>
+            </button>  
+            <br>
+            <button class="btn btn-sm  btn-transparent">
+              <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="btn-rating">& Up</span>
+            </button>  
+            <br>
+            <button class="btn btn-sm  btn-transparent">
+              <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="btn-rating">& Up</span>
+            </button>  
+            <br>
+            <button class="btn btn-sm  btn-transparent">
+              <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="btn-rating">& Up</span>
+            </button>
+        </div>
+        <!-- left hand filter ends -->
+
+        <!-- product list start -->
+        <div class="col-md-9">
+            <!-- single product start -->
+            <div class="row border-top py-3">
+               <!-- product image start -->
+               <div class="col-md-4">
+                  <img src="../amazon_clone_theme/img/product1.jpg"  width="140px"> 
+            </div>
+            <!-- product image ends -->
+            <!-- product details start -->
+            <div class="col-md-8">
+                <a href="#">Sherlock Holmes</a>
+                <p class="text-muted my-0">Sold by BIBLIOPHILE</p>
+                <p>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-regular fa-star"></i>
+                </p>
+                <p class="text-uppercase my-0 my-0 font-weight-bold text-danger">
+                    <i class="fa-sharp fa-solid fa-indian-rupee-sign" style="font-size:12px;"></i>
+                    <span style="font-size:18px;">150</span></p> 
+            </div>
+            <!-- product details ends -->
+            </div>    <!-- single product start -->
+            <div class="row border-top py-3">
+               <!-- product image start -->
+               <div class="col-md-4">
+                  <img src="../amazon_clone_theme/img/product1.jpg"  width="140px"> 
+            </div>
+            <!-- product image ends -->
+            <!-- product details start -->
+            <div class="col-md-8">
+                <a href="#">Sherlock Holmes</a>
+                <p class="text-muted my-0">Sold by BIBLIOPHILE</p>
+                <p>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-regular fa-star"></i>
+                </p>
+                <p class="text-uppercase my-0 my-0 font-weight-bold text-danger">
+                    <i class="fa-sharp fa-solid fa-indian-rupee-sign" style="font-size:12px;"></i>
+                    <span style="font-size:18px;">150</span></p> 
+            </div>
+            <!-- product details ends -->
+            </div> 
+               <!-- single product start -->
+            <div class="row border-top py-3">
+               <!-- product image start -->
+               <div class="col-md-4">
+                  <img src="../amazon_clone_theme/img/product2.jpg"  width="140px"> 
+            </div>
+            <!-- product image ends -->
+            <!-- product details start -->
+            <div class="col-md-8">
+                <a href="#">Sherlock Holmes</a>
+                <p class="text-muted my-0">Sold by BIBLIOPHILE</p>
+                <p>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </p>
+                <p class="text-uppercase my-0 my-0 font-weight-bold text-danger">
+                    <i class="fa-sharp fa-solid fa-indian-rupee-sign" style="font-size:12px;"></i>
+                    <span style="font-size:18px;">150</span></p> 
+            </div>
+            <!-- product details ends -->
+            </div>   
+            <!-- single product ends -->
+
+                        <!-- single product start -->
+                        <div class="row border-top py-3">
+                            <!-- product image start -->
+                            <div class="col-md-4">
+                               <img src="../amazon_clone_theme/img/product3.jpg"  width="140px"> 
+                         </div>
+                         <!-- product image ends -->
+                         <!-- product details start -->
+                         <div class="col-md-8">
+                             <a href="#">Sherlock Holmes</a>
+                             <p class="text-muted my-0">Sold by BIBLIOPHILE</p>
+                             <p>
+                                 <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                                 <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+                                 <i class="fa-regular fa-star"></i>
+                                 <i class="fa-regular fa-star"></i>
+                                 <i class="fa-regular fa-star"></i>
+                             </p>
+                             <p class="text-uppercase my-0 my-0 font-weight-bold text-danger">
+                              <i class="fa-sharp fa-solid fa-indian-rupee-sign" style="font-size:12px;"></i>
+                              <span style="font-size:18px;">150</span></p> 
+                         </div>
+                         <!-- product details ends -->
+                         </div>   
+                         <!-- single product ends -->
+           
+                         <div class="row border-top border-bottom pt-3">
+                          <div class="col-md-12 d-flex justify-content-center">
+                            <nav aria-label="...">
+                              <ul class="pagination">
+                                <li class="page-item disabled">
+                                  <a class="page-link">
+                                    <i class="fa-solid fa-arrow-left-long"></i> Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active" aria-current="page">
+                                  <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">Next <i class="fa-solid fa-arrow-right-long"></i></a>
+
+                                </li>
+                              </ul>
+                            </nav> 
+                          </div>
+                         </div>
+
+
+        </div>
+        <!-- product list ends -->
+
+      </div>
+</div>
+<!-- product-page-ends -->
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- drawer-js-file -->
+  <script src="../amazon_clone_theme/js/bootstrap-drawer.min.js"></script>
+
+  <!--Custom js-->
+  <script src="../js/custom.js"></script>
+</body>
+
+</html>
