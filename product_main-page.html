@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="../img/Uiconstock-Socialmedia-Amazon.ico" image="image/gif" size="16x16">
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <!--FONT AWESOME cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!--Bootstrap CSS local-->
+  <!-- <link rel="stylesheet" href="../css/bootstrap.min.css.map"> -->
+  <!-- <link rel="stylesheet" href="../css/bootstrap.css.map"> -->
+  <!-- drawer-css-file -->
+  <link rel="stylesheet" href="../amazon_clone_theme/css/bootstrap-drawer.min.css">
+
+  <!--Custom CSS -->
+  <link rel="stylesheet" href="../amazon_clone_theme/css/custom.css">
+  <title>product main page</title>
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+    <!-- drawer start -->
+    <button class="btn btn-outline-light" data-toggle="drawer" data-target="#drawer-demo">
+      <i class="fas fa-sliders-h "></i>
+    </button>
+
+    <div class="drawer drawer-left slide" tabindex="-1" role="dialog" aria-labelledby="drawer-demo-title"
+      aria-hidden="true" id="drawer-demo">
+      <div class="drawer-content drawer-content-scrollable" role="document">
+        <div class="drawer-header bg-dark text-white">
+          <h4 class="drawer-title mx-auto" id="drawer-demo-title"><i class="fa-regular fa-user"></i>
+            Hello, Sign In
+          </h4>
+        </div>
+        <div class="drawer-body">
+          <h6 class="text-muted text-uppercase">Help and Settings</h6>
+          <a href="#" class="btn btn-outline-success my-2 btn-sm">Your Account</a>
+          <a href="../html/Login.html" class="btn btn-warning my-2 btn-sm">Sign In</a>
+        </div>
+        <div class="drawer-footer"> <button type="button" class="btn btn-outline-danger btn-sm " data-dismiss="drawer"
+            aria-label="Close">
+            <i class="fa-solid fa-2x fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- drawer ends -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../amazon_clone_theme/img/Amazon-Logo-Transparent-1024x310.png" height="30" width="100" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline" method="" get>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="dropdown px-2">
+                <button id="btnCategory" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                  All
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <input type="text" class="form-control" size="50" name="query" id="" query>
+            <input type="text" name="category" value="" id="category" hidden>
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-warning">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="dropdown px-4">
+          <button id="btnCategory" type="button" data-toggle="dropdown">
+            <i class="fa-solid fa-language"></i>
+          </button>
+          <ul class="dropdown-menu ">
+            <form class="p-3">
+              <div class="custom-control custom-radio mb-2">
+                <input class="custom-control-input" type="radio" name="lang" id="enLang">
+                <label class="custom-control-label" for="enLang">
+                  <img src="../img/flag/english.png" alt="" height="25" width="40"> <b>English</b>
+                </label>
+              </div>
+              <div class="custom-control custom-radio mb-2">
+                <input class="custom-control-input" type="radio" name="lang" id="hinLang">
+                <label class="custom-control-label" for="hinLang">
+
+                  <img src="../img/flag/india.webp" alt="" height="25" width="40"><b>Hindi</b>
+                </label>
+              </div>
+              <div class="custom-control custom-radio mb-2">
+                <input class="custom-control-input" type="radio" name="lang" id="urduLang">
+                <label class="custom-control-label" for="urduLang">
+
+                  <img src="../img/flag//flag-symbolism-Pakistan-design-Islamic.jpg" alt="" height="25"
+                    width="40"><b>Pak</b>
+                </label>
+              </div>
+              <div class="custom-control custom-radio mb-2">
+                <input class="custom-control-input" type="radio" name="lang" id="benLang">
+                <label class="custom-control-label" for="benLang">
+                  <img src="../img/flag/download.png" alt="" height="25" width="40"><b>Bangla</b>
+                </label>
+              </div>
+            </form>
+          </ul>
+        </div>
+        <div class="dropdown px-2">
+          <button id="userAccount" data-toggle="dropdown">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <ul class=" dropdown-menu px-3">
+            <div class="d-flex flex-column justify-content-center">
+              <a href="./Login.html" class="btn btn-warning w-80 btn-sm "><b>Signin</b></a>
+              <small>New customer? <a href="#">Start here</a></small>
+            </div>
+          </ul>
+        </div>
+        <a class="nav-item ml-3" href="#" aria-disabled="true">
+          <i class="fa-2x text-light fa-solid fa-cart-arrow-down"></i>
+          <span class="badge badge-warning badge-pill">
+            1
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container my-5">
+
+    <!-- top page design starts -->
+    <div class="row">
+      <!-- image select button starts -->
+      <div class="col-md-1 ">
+        <button class="btn btn-sm bg-transparent">
+          <img src="../amazon_clone_theme/img/image for product page/img01.jpg" alt="" style="width: 80%;">
+        </button>
+        <button class="btn btn-sm bg-transparent">
+          <img src="../amazon_clone_theme/img/image for product page/img02.jpg" alt="" style="width: 80%;">
+        </button>
+        <button class="btn btn-sm bg-transparent">
+          <img src="../amazon_clone_theme/img/image for product page/img03.jpg" alt="" style="width: 80%;">
+        </button>
+        <button class="btn btn-sm bg-transparent">
+          <img src="../amazon_clone_theme/img/image for product page/img04.jpg" alt="" style="width: 80%;">
+        </button>
+
+      </div>
+      <!-- image select button ends -->
+      <!-- product image starts -->
+      <div class="col-md-3 ml-0 pl-0">
+        <img src="../amazon_clone_theme/img/image for product page/img1.jpg" alt="" height="318px" width="318px">
+      </div>
+      <!-- product image ends -->
+
+      <!-- product details starts -->
+      <div class="col-md-3">
+        <h6 class="font-weight-bold">
+          The Adventures of Sherlock Holmes Paperback – 1 September 2016
+        </h6>
+        <!-- rating -->
+        <p>
+          <i class="fa-sharp fa-solid fa-star" style="color: #ffa41c;"></i>
+          <i class="fa-sharp fa-solid fa-star" style="color: #ffa41c;"></i>
+          <i class="fa-sharp fa-solid fa-star" style="color: #ffa41c;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #ffa41c;"></i>
+          <i class="fa-regular fa-star" style="color: #ffa41c;"></i>
+        </p>
+        <div class="dropdown-divider mt-3"></div>
+
+        <p class="mb-0"><span class="text-muted mr-2">M.R.P.:</span>
+          <span class="text-danger font-weight-bold">
+            <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
+            240/-
+          </span>
+        </p>
+
+        <p><span class="text-muted mr-2">You Save</span>
+          <span class="text-danger font-weight-bold">
+            <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
+            70/-
+          </span>
+        </p>
+        <!-- delivery quakity starts images -->
+        <div class="row font-weight-bold" style="font-size: 10px;">
+          <div class="col-md-3"><img src="../amazon_clone_theme/img/image for product page/pay_on_delivery.png" alt=""
+              width="35px" height="35px"><br>
+            <a href="#">No contact delivery</a>
+          </div>
+          <div class="col-md-3"><img src="../amazon_clone_theme/img/image for product page/replacement.png" alt=""
+              width="35px" height="35px"><br>
+            <a href="#">10 Days Replacement Only</a>
+          </div>
+          <div class="col-md-3"><img src="../amazon_clone_theme/img/image for product page/amazon_delivery.png" alt=""
+              width="35px" height="35px"><br>
+            <a href="#">Amazon Delivered</a>
+          </div>
+          <div class="col-md-3"><img src="../amazon_clone_theme/img/image for product page/replacement.png" alt=""
+              width="35px" height="35px"><br>
+            <a href="#">1 year Warranty</a>
+          </div>
+        </div>
+        <!-- delivery quakity ends images -->
+        <div class="mt-3dropdown-divider mt-3 "></div>
+
+        <p class="text-success font-weight-bold">In Stock.</p>
+        <p class="mt-n3">
+          Sold by:
+          <a href="#">abc seller</a>
+        </p>
+
+
+
+
+        <!-- product description starts -->
+        <ul>
+          <li> ASIN : 8175993863</li>
+          <li>
+            Publisher : Fingerprint! Publishing (1 September 2016)
+          </li>
+          <li>
+            Language : English
+          </li>
+          <li>
+
+            Paperback : 312 pages
+          </li>
+          <li>
+            ISBN-10 : 9788175993860
+
+          </li>
+          <li>
+            ISBN-13 : 978-8175993860
+
+          </li>
+          <li>
+
+            Item Weight : 200 g
+          </li>
+          <li>
+            Dimensions : 20.3 x 25.4 x 4.7 cm
+
+          </li>
+          <li>
+
+            Importer : 011-23247062
+          </li>
+          <li>
+
+            Best Sellers Rank: #2,629 in Books (See Top 100 in Books)
+          </li>
+          <li>
+            #53 in Mysteries (Books)
+
+          </li>
+
+        </ul>
+        <!-- product description ends -->
+
+      </div>
+      <!-- product details ends -->
+
+      <!-- add product card starts -->
+      <div class="col-md-4 ">
+        <!-- card-starts -->
+        <div class="card shadow float-right rounded text-center" style="border:8px solid #ffffff ;width: 20rem;">
+          <div class="card-body" style="border: 4px #D5D9D9 solid;">
+            <div class="form-group">
+              <label for="quantity">Quantity: </label>
+              <select class="form-control form-control-sm d-inline ml-2" style="width: 50px;" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+
+            </div>
+
+            <p class="mb-0"><span class="text-muted mr-2">M.R.P.:</span>
+              <span class="text-danger font-weight-bold">
+                <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
+                240/-
+              </span>
+            </p>
+            <a href="#" class="btn mt-3 btn-warning btn-block btn-sm">
+              <i class="fa-solid  float-left fa-cart-plus" style="font-size: 23px;"></i>
+              Add to Cart</a>
+            <a href="#" class="btn mt-3  btn-block btn-sm">
+              <i class="fa-sharp fa-solid fa-location-dot" style="font-size: 23px;"></i>
+              Deliver to this Address</a>
+          </div>
+        </div>
+        <!-- card ends -->
+      </div>
+      <!-- add product card ends -->
+    </div>
+    <!-- top page design ends -->
+
+    <div class="dropdown-divider "></div>
+  </div>
+  <div class="container-fluid">
+      
+    <div class="row ml-4   ">
+      <div class="col-md-12">
+        <h4 class="text-danger font-weight-bold">Special offers and product promotions</h4>
+        <ul>
+          <li>7.5% Instant Discount up to INR 1500 on Bank of Baroda Credit Card EMI Trxn. Minimum purchase value INR 10000</li>
+          <li>7.5% Instant Discount up to INR 1500 on Amex Credit Card EMI Trxn. Minimum purchase value INR 12000</li>
+          <li>5% Instant Discount up to INR 250 on HSBC Cashback Card Credit Card Transactions. Minimum purchase value INR 1000</li>
+          <li>No cost EMI available on select cards. Please check 'EMI options' above for more details.</li>
+          <li>Get GST invoice and save up to 28% on business purchases. </li>
+      
+        </ul>
+      </div>
+    </div> 
+     <div class="row ml-4 ">
+      <div class=" col-md-10 border-top border-bottom ">
+        <h4 class="text-warning my-3 font-weight-bold">Product Description</h4>
+        <h6 class="ml-3">About the Author</h6>
+        <p class="ml-5">An exceptionally talented storyteller, Sir Arthur Ignatius Conan Doyle was born in Edinburgh, Scotland, in May 1859. Doyle began writing while studying at the University of Edinburgh Medical School, which he joined in 1876. Doyle graduated in 1881 and was employed as a surgeon on the steamer Mayumba on its voyage to the West African coast.
+          Sir Arthur Conan Doyle was most noted for creating the fictional detective Sherlock Holmes and writing stories about him which are generally considered milestones in the field of crime fiction.
+          Pointing out the social injustices, Holmes offers a new and just approach in a world which is unfair. Sherlock Holmes, the most well-known fictional detective, has been listed with Guinness World Records as the “most portrayed movie character” in history.
+          Doyle died of a heart attack in July 1930, aged seventy-one.</p>
+      </div>
+    </div>
+
+    <!-- customer-review starts -->
+<div class="row my-4">
+  <div class="col-md-2 ml-4">
+    <p class="text-capitalize font-weight-bold">Avg. Customer Review</p>
+    <button class="btn btn-sm  btn-transparent">
+      <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+            <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+            <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+            <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="btn-rating">& Up</span>
+    </button>  
+    <br>
+    <button class="btn btn-sm  btn-transparent">
+      <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+            <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+            <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="btn-rating">& Up</span>
+    </button>  
+    <br>
+    <button class="btn btn-sm  btn-transparent">
+      <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+            <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="btn-rating">& Up</span>
+    </button>  
+    <br>
+    <button class="btn btn-sm  btn-transparent">
+      <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="btn-rating">& Up</span>
+    </button>
+  </div>
+  <div class="col-md-8">
+    <p class="font-weight-bold">Top Reviews from India</p>
+    <div class="row">
+      <div class="col-md-12">
+<p>
+  <img src="../amazon_clone_theme/img/image for product page/empty_avatar.png" class="rounded-circle mr-2" width="34px" height="34px" alt="">
+<a href="#" style="text-decoration: none;" class="text-dark"> Rajiv kumar</a>
+<p class="font-weight-bold mt-2">
+  <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star" style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star" style="color: #ffa41c;"></i>
+  <i class="fa-regular fa-star mr-2"></i>
+  Learn selling from ME
+</p>
+</p>
+<div class="container">
+
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptas eveniet laboriosam fuga dolore qui veritatis aspernatur quas corporis velit architecto, placeat minima autem repellat blanditiis accusamus id, sapiente, esse deleniti perferendis consectetur natus recusandae. Officiis enim minima rerum unde. Dignissimos maxime a vitae expedita? Explicabo labore enim ullam quidem. Provident modi, eos, omnis illum dolor ex et corporis earum adipisci debitis non, nihil quaerat exercitationem deleniti quam aliquam optio? Esse cumque harum laudantium enim?</p>
+</div>
+      </div>
+    </div> 
+       <div class="row">
+      <div class="col-md-12">
+<p>
+  <img src="../amazon_clone_theme/img/image for product page/empty_avatar.png" class="rounded-circle mr-2" width="34px" height="34px" alt="">
+<a href="#" style="text-decoration: none;" class="text-dark"> Rajiv kumar</a>
+<p class="font-weight-bold mt-2">
+  <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star" style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star" style="color: #ffa41c;"></i>
+  <i class="fa-regular fa-star mr-2"></i>
+  Learn selling from ME
+</p>
+</p>
+<div class="container">
+
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptas eveniet laboriosam fuga dolore qui veritatis aspernatur quas corporis velit architecto, placeat minima autem repellat blanditiis accusamus id, sapiente, esse deleniti perferendis consectetur natus recusandae. Officiis enim minima rerum unde. Dignissimos maxime a vitae expedita? Explicabo labore enim ullam quidem. Provident modi, eos, omnis illum dolor ex et corporis earum adipisci debitis non, nihil quaerat exercitationem deleniti quam aliquam optio? Esse cumque harum laudantium enim?</p>
+</div>
+      </div>
+    </div>  
+      <div class="row">
+      <div class="col-md-12">
+<p>
+  <img src="../amazon_clone_theme/img/image for product page/empty_avatar.png" class="rounded-circle mr-2" width="34px" height="34px" alt="">
+<a href="#" style="text-decoration: none;" class="text-dark"> Rajiv kumar</a>
+<p class="font-weight-bold mt-2">
+  <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star" style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star" style="color: #ffa41c;"></i>
+  <i class="fa-regular fa-star mr-2"></i>
+  Learn selling from ME
+</p>
+</p>
+<div class="container">
+
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptas eveniet laboriosam fuga dolore qui veritatis aspernatur quas corporis velit architecto, placeat minima autem repellat blanditiis accusamus id, sapiente, esse deleniti perferendis consectetur natus recusandae. Officiis enim minima rerum unde. Dignissimos maxime a vitae expedita? Explicabo labore enim ullam quidem. Provident modi, eos, omnis illum dolor ex et corporis earum adipisci debitis non, nihil quaerat exercitationem deleniti quam aliquam optio? Esse cumque harum laudantium enim?</p>
+</div>
+      </div>
+    </div> 
+       <div class="row">
+      <div class="col-md-12">
+<p>
+  <img src="../amazon_clone_theme/img/image for product page/empty_avatar.png" class="rounded-circle mr-2" width="34px" height="34px" alt="">
+<a href="#" style="text-decoration: none;" class="text-dark"> Rajiv kumar</a>
+<p class="font-weight-bold mt-2">
+  <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star " style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star" style="color: #ffa41c;"></i>
+  <i class="fa-solid fa-star" style="color: #ffa41c;"></i>
+  <i class="fa-regular fa-star mr-2"></i>
+  Learn selling from ME
+</p>
+</p>
+<div class="container">
+
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptas eveniet laboriosam fuga dolore qui veritatis aspernatur quas corporis velit architecto, placeat minima autem repellat blanditiis accusamus id, sapiente, esse deleniti perferendis consectetur natus recusandae. Officiis enim minima rerum unde. Dignissimos maxime a vitae expedita? Explicabo labore enim ullam quidem. Provident modi, eos, omnis illum dolor ex et corporis earum adipisci debitis non, nihil quaerat exercitationem deleniti quam aliquam optio? Esse cumque harum laudantium enim?</p>
+</div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+    <!-- customer-review ends -->
+    <div class="dropdown-divider mt-3 ml-3"></div>
+  </div>
+  <div class="container mb-4">
+    <a href="#" class="font-weight-bold"><i class="fa-solid fa-caret-down"></i> See all reviews.</a>
+
+  </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- drawer-js-file -->
+  <script src="../amazon_clone_theme/js/bootstrap-drawer.min.js"></script>
+
+  <!--Custom js-->
+  <script src="../amazon_clone_theme/js/custom.js"></script>
+</body>
+
+</html>
